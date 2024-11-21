@@ -199,16 +199,6 @@ export default function HomeScreen() {
 
   const handleFilterChange = (newFilter: string) => setFilter(newFilter);
 
-  const filterFoodData = foodData
-    .filter((item) =>
-      item.title.toLowerCase().includes(searchQuery.toLowerCase())
-    )
-    .filter((item) => filter === "All" || item.category === filter);
-
-  const handleDetailsClick = (id: string) => {
-    router.push(`/details/${id}`);
-  };
-
   const renderFoodCard = ({ item }: { item: any }) => (
     <View style={styles.card}>
       {item.imageUrl ? (
@@ -225,10 +215,20 @@ export default function HomeScreen() {
     </View>
   );
 
+  const filterFoodData = foodData
+    .filter((item) =>
+      item.title.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+    .filter((item) => filter === "All" || item.category === filter);
+
+  const handleDetailsClick = (id: string) => {
+    router.push(`/details/${id}`);
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <ThemedView style={styles.searchContainer}>
-        <ThemedText style={styles.title}>Foodies</ThemedText>
+        <ThemedText style={styles.title}>Hi Foodies!</ThemedText>
         <TextInput
           style={styles.searchInput}
           placeholder="Cari Makananmu.."

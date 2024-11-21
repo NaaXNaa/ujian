@@ -84,15 +84,6 @@ const foodData = [
     category: "Food",
   },
   {
-    id: "10",
-    title: "Nasi Kuning",
-    description: `Nasi kuning adalah nasi yang dimasak dengan kunyit, memberi warna kuning cerah dan aroma yang harum. Biasanya disajikan dengan lauk pauk seperti ayam goreng, sambal, telur, dan serundeng kelapa, menjadikannya hidangan yang khas untuk acara spesial.
-`,
-    imageUrl:
-      "https://i.pinimg.com/236x/e9/89/4d/e9894d428e3b95eb48481df47cd461d6.jpg",
-    category: "Food",
-  },
-  {
     id: "11",
     title: "Air Putih",
     description: `Air putih biasa yang menyegarkan, memberikan rasa segar dan dingin saat diminum, sangat cocok untuk melepas dahaga setelah aktivitas atau di cuaca panas. Kesederhanaan air putih memberikan keseimbangan dalam menjaga tubuh tetap terhidrasi.

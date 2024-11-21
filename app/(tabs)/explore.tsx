@@ -26,9 +26,24 @@ const ProfileAndSettingsScreen: React.FC = () => {
         <View style={styles.settingContainer}>
           <ThemedView style={styles.deskripsiText}>
             <ThemedText style={styles.deskripsi}>
-              Foodies adalah solusi praktis bagi para pencinta kuliner yang
-              ingin menjelajahi dunia makanan dengan cara yang lebih mudah,
+              Food adalah solusi praktis bagi para pencinta kuliner yang ingin
+              menjelajahi dunia makanan dengan cara yang lebih mudah,
               menyenangkan, dan informatif.
+            </ThemedText>
+          </ThemedView>
+
+          <ThemedView style={styles.fiturDeskripsiContainer}>
+            <ThemedText style={styles.fiturTitle}>Fitur Aplikasi:</ThemedText>
+            <ThemedText style={styles.fiturDeskripsi}>
+              1. Memiliki SearchBar yang dapat digunakan untuk mencari atau
+              menemukan makanan/minuman yang dicari
+            </ThemedText>
+            <ThemedText style={styles.fiturDeskripsi}>
+              2. Memiliki fitur filter yang dapat digunakan untuk memilah antara
+              makanan ataupun minuman
+            </ThemedText>
+            <ThemedText style={styles.fiturDeskripsi}>
+              3. Mendapatkan rekomendasi makanan berdasarkan preferensi Anda.
             </ThemedText>
           </ThemedView>
         </View>
@@ -100,6 +115,23 @@ const styles = StyleSheet.create({
   deskripsi: {
     fontSize: 15,
     color: "#fff",
+  },
+  // New styles for fitur Deskripsi
+  fiturDeskripsiContainer: {
+    backgroundColor: "#333",
+    marginTop: 20,
+    paddingHorizontal: 10,
+  },
+  fiturTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#ABBA7C",
+    marginBottom: 10,
+  },
+  fiturDeskripsi: {
+    fontSize: 14,
+    color: "#fff",
+    marginBottom: 5,
   },
 });
 
